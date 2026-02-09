@@ -33,3 +33,16 @@ Simple Django-based mail merge project for managing campaigns, recipients, and s
 ## Notes
 - Email template syntax uses `{{field}}` placeholders.
 - `AUTH_USER_MODEL` is set to `mailmerge.User`.
+
+## Architecture Diagram
+
+```mermaid
+flowchart TD
+    user[User] --> ui[ReactUI]
+    ui --> api[DjangoAPI]
+    api --> db[Postgres]
+    api -->|enqueue| sqs[SQSQueue]
+    worker[SendWorker] -->|poll| sqs
+    worker -->|send| emailProvider[SMTPorProvider]
+    worker --> db
+```

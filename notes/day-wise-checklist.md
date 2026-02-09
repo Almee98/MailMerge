@@ -67,3 +67,16 @@
 - Demo video or GIF.
 - Public URL and example dataset.
 - Short case study: problem, design, tradeoffs.
+
+## Architecture Diagram
+
+```mermaid
+flowchart TD
+    user[User] --> ui[ReactUI]
+    ui --> api[DjangoAPI]
+    api --> db[Postgres]
+    api -->|enqueue| sqs[SQSQueue]
+    worker[SendWorker] -->|poll| sqs
+    worker -->|send| emailProvider[SMTPorProvider]
+    worker --> db
+```
