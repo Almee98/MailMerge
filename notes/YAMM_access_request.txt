@@ -1,0 +1,40 @@
+Select what Yet Another Mail Merge: Mail Merge for Gmail can access
+
+Select all
+
+See and download your contacts. Learn more
+
+
+See, edit, create, and delete all your Google Sheets spreadsheets. Learn more
+
+
+View your email messages when the add-on is running. Learn more
+
+
+Run as a Gmail add-on. Learn more
+
+
+Read, compose, and send emails from your Gmail account. Learn more
+
+
+Connect to an external service. Learn more
+
+
+Send email as you. Learn more
+
+
+Allow this application to run when you are not present. Learn more
+
+
+View and manage data associated with the application. Learn more
+
+
+View your installed application's licensing information. Learn more
+
+
+Display and run third-party web content in prompts and sidebars inside Google applications. Learn more
+
+YAMM requires user to have a Google profile to in order to work.
+YAMM is a Google Sheets add-on.
+
+YAMM has a "Merge Status" for each individual email. It starts with "SCHEDULED", goes on to "EMAIL_SENT" and "EMAIL_OPENED".

@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Django
+db.sqlite3
+staticfiles/
+
+# Environment
+.env
+.env.*
+.python-version
+
+# Virtualenvs
+bin/
+lib/
+include/
+pyvenv.cfg
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
